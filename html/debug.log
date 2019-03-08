@@ -1,2 +1,0 @@
-[0306/152834.794:ERROR:process_info.cc(359)] UncheckedAllocate
-[0306/152839.473:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\dell\AppData\Local\Google\Chrome\User Data\Crashpad\reports\0a68101c-6a89-4131-bd91-ab43aa3a5000.dmp: 另一个程序正在使用此文件，进程无法访问。 (0x20)
