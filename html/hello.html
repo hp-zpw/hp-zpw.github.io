@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		HelloUnity
+	</title>
+	<link rel="stylesheet" type="text/css" href="onepage-scroll.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+</head>
+<style>
+*{
+	/*font-family: "Microsoft Yahei";*/
+	font-size: 16px;
+	/*color: #666;*/
+}
+.page1 { background-color: #ffffff;}
+.page2 { background-color: #ffffff;}
+.page3 { background-color: #ffffff;}
+.page4 { background-color: #f90;}
+p.title { position: relative; top: 35%; font: 700 40px;text-align: center;}
+
+.h-text {
+	font-size: 36px;
+    letter-spacing: 8px;
+}
+
+.text2 {
+	font-size: 24px;
+    letter-spacing: 8px;
+}
+
+ul{
+	padding-inline-start:0px;
+}
+
+.max-size
+{
+	height: 100%;
+	width: 100%;
+}
+
+.hide{
+	display: none !important;
+}
+</style>
+<body>
+
+<div class="main">
+	<div class="page page1">
+		<div class="h-text" style="position: absolute;right: 10px;top: 19px;">传送门终端</div>
+		<div class="max-size">
+		<ul id="scene" style="position: absolute;bottom: 0;margin-bottom:0" class="max-size">
+			<li class="layer max-size" data-depth=".05">
+				<p class="h-text" style="position: absolute;top: 30%;text-align: center;width: 100%">Hello world</p>
+			</li>
+			<li class="layer max-size" data-depth=".2">
+				<!-- <img style="position: absolute;left: 0;bottom: 80px;width: 512px;height: 512px;background-color: #ff000099"/> -->
+				<img style="position: absolute;right: 250px;bottom: 80px;width: 400px;height: 400px;" src="../pictures/3.png"/>
+			</li>
+			<li class="layer max-size" data-depth=".35">
+				<img style="position: absolute;bottom: -100px;left: -100px;width: 600px;height: 600px" src="../pictures/1.png"/>
+				<img style="position: absolute;bottom:-150px;right: -150px;width: 700px;height: 700px" src="../pictures/2.png"/>
+			</li>
+			
+<!-- 			<li class="layer max-size" data-depth=".5">
+				<img style="position: absolute;left: 0;bottom: 160px;width: 512px;height: 512px;background-color: #0000ff99"/>
+				<img style="position: absolute;right: 0;bottom: 160px;width: 512px;height: 512px;background-color: #0000ff99"/>
+			</li> -->
+		</ul>
+		</div>
+		<p style="position: absolute;bottom: 70px;text-align: center;width: 100%">滑动 或点击键盘</p>
+		<div style="width: 50px;height: 50px;background-color: green;position: absolute;bottom: 10px;left: 
+		0;right: 0;margin: auto;"></div>
+	</div>
+	<div class="page page2">
+		<div anim-name="slideInDown" class="h-text" style="position: absolute;left: 10px;top: 19px;">这就是开始？</div>
+		<div anim-name="slideInLeft" class="text2" style="margin-top: 150px;margin-left: 20px;position: absolute;" >
+			有时候还能回想起
+				第一次使用Unity的心情
+				第一次完成首页的心情
+		</div>
+		<div style="display: flex;
+		    justify-content: space-between;
+		    /* padding-top: 10%; */
+		    padding-left: 30%;
+		    padding-right: 50px;
+		    align-content: center;
+		    height: 100%;
+		    align-items: center;
+		    /* width: 100%; */">
+			<video anim-name="fadeInUp" style="width: 768px;height: 480px;" autoplay="autoplay" loop="loop" muted="muted">
+				<source src="p11.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+	</div>
+	<div class="page page3">
+		<div anim-name="slideInDown" class="h-text" style="position: absolute;left: 10px;top: 19px;">— The After Store —</div>
+		<div anim-name="slideInLeft" class="text2" style="margin-top: 150px;margin-left: 20px;position: absolute;" >
+			第一次做出首页
+		</div>
+		<div style="display: flex;
+		    justify-content: space-between;
+		    /* padding-top: 10%; */
+		    padding-left: 30%;
+		    padding-right: 50px;
+		    align-content: center;
+		    height: 100%;
+		    align-items: center;
+		    /* width: 100%; */">
+			<video anim-name="fadeInUp" style="width: 768px;height: 480px;" autoplay="autoplay" loop="loop" muted="muted">
+				<source src="p22.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+		<!-- <div anim-name="slideInDown" class="h-text" style="position: absolute;left: 10px;top: 19px;">第二个</div>
+		<div anim-name="slideInLeft" class="" style="position: absolute;height: 60%;width: 20%;top: 20%;background-color: red;word-break: break-all;margin-left: 10px;padding: 8px">
+			xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+		</div>
+		<div style="display: flex;
+		    justify-content: space-between;
+		    /* padding-top: 10%; */
+		    padding-left: 30%;
+		    padding-right: 50px;
+		    align-content: center;
+		    height: 100%;
+		    align-items: center;
+		    /* width: 100%; */">
+			<img style="width: 500px;height: 500px;background-color: white" src="timg.gif"/>
+			<img style="width: 500px;height: 500px;background-color: white" src="timg.gif"/>
+		</div> -->
+	</div>
+	<div class="page page4">
+		<p class="title">第四屏</p>
+	</div>
+</div>
+
+
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="onepage-scroll.min.js"></script>
+<script type="text/javascript" src="jquery.parallax.js"></script>
+<script type="text/javascript" src="parallax.js"></script>
+
+<script type="text/javascript">
+	// var pageCount = 
+	var ATTR_ANIMNAME = "anim-name";
+	var currentPageIdx = 1;
+	var prevPageIdx = 1;
+	var pageCount = $(".page").length;
+
+	$(".main").onepage_scroll({
+	   sectionContainer: ".page",     // sectionContainer accepts any kind of selector in case you don't want to use section
+	   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+	                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+	   animationTime: 500,             // AnimationTime let you define how long each section takes to animate
+	   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+	   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+	   beforeMove: function(index) {
+	   		console.log("before current:" + currentPageIdx);
+	   		console.log("before:" + index);
+	   },  // This option accepts a callback function. The function will be called before the page moves.
+	   afterMove: function(index) {
+	   		console.log("after:" + index);
+	   		
+	   		prevPageIdx = currentPageIdx;
+	   		currentPageIdx = index;
+	   		PlayPageAllAnim(currentPageIdx);
+	   		InitPage(prevPageIdx);
+	   },   // This option accepts a callback function. The function will be called after the page moves.
+	   loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+	   keyboard: true,                  // You can activate the keyboard controls
+	   responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+	                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+	                                    // the browser's width is less than 600, the fallback will kick in.
+	   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+	});
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene,{
+		  calibrateX: false,
+		  calibrateY: true,
+		  invertX: false,
+		  invertY: false,
+		  // limitX: false,
+		  // limitY: 10,
+		  // scalarX: 2,
+		  // scalarY: 8,
+		  // frictionX: 0.2,
+		  // frictionY: 0.8,
+		  // originX: 0.0,
+		  // originY: 1.0
+	});
+	//$('#scene').parallax();
+
+	(function InitLayout(){
+		for (var i = 1; i <= pageCount; i++) {
+			InitPage(i);
+		}
+	})();
+
+	function PlayPageAllAnim(pageIdx) 
+	{
+		var animtors = $(".page" + pageIdx).find('*['+ATTR_ANIMNAME+']');
+		$.each(animtors,function(i,animtor){
+			$(this).removeClass('hide').addClass($(this).attr(ATTR_ANIMNAME) + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      			//$(this).removeClass();
+    		});
+		});
+	};
+
+	function InitPage(pageIdx)
+	{
+		var animtors = $(".page" + pageIdx).find('*['+ATTR_ANIMNAME+']');
+		$.each(animtors,function(i,animtor){
+			$(this).addClass('hide');
+		});
+	}
+</script>
+
+</html>
