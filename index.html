@@ -314,6 +314,8 @@ p.title { position: relative; top: 35%; font: 700 40px;text-align: center;}
 	var prevPageIdx = 1;
 	var pageCount = $(".page").length;
 
+	var img = new Image();
+	img.src = "svg/mask.svg";
 	// 模拟加载完成
 	var loadingLoop = setInterval(function(){
 		if(IsResAllReady())
@@ -346,6 +348,7 @@ p.title { position: relative; top: 35%; font: 700 40px;text-align: center;}
 
 	function IsResAllReady()
 	{
+		if (!img.complete) return;
 		for (var i = 0; i < $("audio").length; i++) {
 			console.log("audio state",$("audio")[i].readyState);
 			if ($("audio")[i].readyState != 4)
