@@ -1,0 +1,66 @@
+<?xml version="1.0" standalone="no"?>
+
+<!-- <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> -->
+
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+
+	<defs>
+	<filter id="Gaussian_Blur">
+		<feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+	</filter>
+	<filter id="blendAph">
+		<!-- <feImage width="100%" height="100%" style="fill:rgba(0,0,0,1)"/> -->
+		<feBlend in2="BackgroundImage" in="SourceImage" mode="multiply"/>
+	</filter>
+	</defs>
+
+<!-- 	<rect width="100%" height="100%"
+	style="fill:rgba(0,0,0,1);"/> -->
+	<mask id="myMask">
+	    <!-- Everything under a white pixel will be visible -->
+	    <!-- <g width="100%" height="100%" fill="none"> -->
+	    <rect x="0" y="0" width="100%" height="100%" fill="white">
+	    	<animate attributeName="fill"
+                dur="1.2s"
+                values="white;rgba(100,100,100)"
+                calcMode="spline"
+                keyTimes="0;1"
+                keySplines="0.72, 0.72, 0.48, 0.48"
+                repeatCount="1" />
+	    </rect>
+	    <circle cx="50%" cy="50%" r="30" fill="black">
+	    	<animate attributeName="r"
+		        dur="1.2s"
+		        values="30; 1500"
+		        calcMode="spline"
+		        keyTimes="0;1"
+		        keySplines="0.72, 0.72, 0.48, 0.48"
+		        repeatCount="1" />
+	    </circle>
+		<!-- </g> -->
+	    <!-- Everything under a black pixel will be invisible -->
+	    <!-- <path d="M10,35 A20,20,0,0,1,50,35 A20,20,0,0,1,90,35 Q90,65,50,95 Q10,65,10,35 Z"/> -->
+  	</mask>
+  	<rect width="100%" height="100%" mask="url(#myMask)" />
+<!-- 	<circle cx="600" cy="450" r="300" fill="rgba(255,0,0,.5)">
+		<animate attributeName="r"
+        begin="-0.9s" dur="1.8s"
+        values="300; 400"
+        calcMode="spline"
+        keyTimes="0; 1"
+        keySplines="0.165, 0.84, 0.44, 1"
+        repeatCount="indefinite" />
+	</circle>
+
+	<circle cx="450" cy="450" r="300" fill="rgba(0,255,0,.5)" filter="url(#blendAph)">
+		<animate attributeName="r"
+        begin="-0.9s" dur="1.8s"
+        values="300; 400"
+        calcMode="spline"
+        keyTimes="0; 1"
+        keySplines="0.165, 0.84, 0.44, 1"
+        repeatCount="indefinite" />
+	</circle> -->
+
+</svg>

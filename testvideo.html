@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		HelloUnity
+	</title>
+</head>
+<style>
+*{
+	/*font-family: "Microsoft Yahei";*/
+	font-size: 16px;
+	/*color: #666;*/
+}
+.page1 { background-color: #ffffff;}
+.page2 { background-color: #ffffff;}
+.page3 { background-color: #ffffff;}
+.page4 { background-color: #f90;}
+p.title { position: relative; top: 35%; font: 700 40px;text-align: center;}
+
+.h-text {
+	font-size: 36px;
+    letter-spacing: 8px;
+}
+
+.text2 {
+	font-size: 24px;
+    letter-spacing: 8px;
+}
+
+ul{
+	padding-inline-start:0px;
+}
+
+.max-size
+{
+	height: 100%;
+	width: 100%;
+}
+
+.hide{
+	display: none !important;
+}
+</style>
+<body>
+<audio id="bgAudio" autoplay="autoplay" loop="loop" src="audio/bg1.mp3"></audio>
+
+<div class="main">
+	<div class="page page1">
+		<div class="h-text" style="position: absolute;right: 10px;top: 19px;">传送门终端</div>
+		<div class="max-size">
+		<ul id="scene" style="position: absolute;bottom: 0;margin-bottom:0" class="max-size">
+			<li class="layer max-size" data-depth=".05">
+				<p class="h-text" style="position: absolute;top: 30%;text-align: center;width: 100%">Hello world</p>
+			</li>
+			<li class="layer max-size" data-depth=".2">
+				<!-- <img style="position: absolute;left: 0;bottom: 80px;width: 512px;height: 512px;background-color: #ff000099"/> -->
+				<img style="position: absolute;right: 250px;bottom: 80px;width: 400px;height: 400px;" src="image/3.png"/>
+			</li>
+			<li class="layer max-size" data-depth=".35">
+				<img style="position: absolute;bottom: -100px;left: -100px;width: 600px;height: 600px" src="image/1.png"/>
+				<img style="position: absolute;bottom:-150px;right: -150px;width: 700px;height: 700px" src="image/2.png"/>
+			</li>
+			
+<!-- 			<li class="layer max-size" data-depth=".5">
+				<img style="position: absolute;left: 0;bottom: 160px;width: 512px;height: 512px;background-color: #0000ff99"/>             p098
+				<img style="position: absolute;right: 0;bottom: 160px;width: 512px;height: 512px;background-color: #0000ff99"/>
+			</li> -->
+		</ul>
+		</div>
+		<p style="position: absolute;bottom: 70px;text-align: center;width: 100%">滑动 或点击键盘</p>
+		<div style="width: 50px;height: 50px;background-color: green;position: absolute;bottom: 10px;left: 
+		0;right: 0;margin: auto;"></div>
+	</div>
+	<div class="page page2">
+		<div anim-name="slideInDown" class="h-text" style="position: absolute;left: 10px;top: 19px;">这就是开始？</div>
+		<div anim-name="slideInLeft" class="text2" style="margin-top: 150px;margin-left: 20px;position: absolute;" >
+			有时候还能回想起
+				第一次使用Unity的心情
+				第一次完成首页的心情
+		</div>
+		<div style="display: flex;
+		    justify-content: space-between;
+		    /* padding-top: 10%; */
+		    padding-left: 30%;
+		    padding-right: 50px;
+		    align-content: center;
+		    height: 100%;
+		    align-items: center;
+		    /* width: 100%; */">
+			<video anim-name="fadeInUp" style="width: 768px;height: 480px;" autoplay="autoplay" loop="loop" muted="muted">
+				<source src="video/P11.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+	</div>
+	<div class="page page3">
+		<div anim-name="slideInDown" class="h-text" style="position: absolute;left: 10px;top: 19px;">— The After Store —</div>
+		<div anim-name="slideInLeft" class="text2" style="margin-top: 150px;margin-left: 20px;position: absolute;" >
+			第一次做出首页
+		</div>
+		<div style="display: flex;
+		    justify-content: space-between;
+		    /* padding-top: 10%; */
+		    padding-left: 30%;
+		    padding-right: 50px;
+		    align-content: center;
+		    height: 100%;
+		    align-items: center;
+		    /* width: 100%; */">
+			<video anim-name="fadeInUp" style="width: 768px;height: 480px;" autoplay="autoplay" loop="loop" muted="muted">
+				<source src="video/P22.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+	</div>
+	<div class="page page4">
+		<p class="title">第四屏</p>
+	</div>
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+
+</script>
+
+</html>
