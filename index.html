@@ -346,14 +346,14 @@ p.title { position: relative; top: 35%; font: 700 40px;text-align: center;}
 
 	function IsResAllReady()
 	{
-		for (var i = 0; i < $("video").length; i++) {
-			console.log("video state",$("video")[i].readyState);
-			if ($("video")[i].readyState != 4)
-				return false;
-		}
 		for (var i = 0; i < $("audio").length; i++) {
 			console.log("audio state",$("audio")[i].readyState);
 			if ($("audio")[i].readyState != 4)
+				return false;
+		}
+		for (var i = 0; i < $("video").length; i++) {
+			console.log("video state",$("video")[i].readyState);
+			if ($("video")[i].readyState != 4)
 				return false;
 		}
 
