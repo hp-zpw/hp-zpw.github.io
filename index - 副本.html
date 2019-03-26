@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<title>
+		HelloUnity
+	</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/self.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+</head>
+<style>
+
+</style>
+<body>
+<div class="loader-bg">
+	<img id="Mask" class="max-size hide" src=""/>
+	<div id="TempMask" class="max-size" style="background-color: black"></div>
+	<img id="PuffSvg" class="loader" src="svg/puff.svg"/>
+	<button id="EnterBtn" class="button button-origin undisplay anim-ease-out colorLoop" >ENTER</button>
+</div>
+
+<audio id="bgAudio" loop="loop" src="audio/bg1.mp3"></audio>
+
+<div class="swiper-container max-size">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<div class="h-text" style="position: absolute;right: 10px;top: 19px;">传送门终端</div>
+			<div anim-name="fadeIn" class="max-size">
+			<ul id="scene1" class="max-size">
+				
+				<li class="layer max-size" data-depth=".2">
+					<img class="bg-img" src="image/b/5.png"/>
+				</li>
+				<li class="layer max-size" data-depth=".25">
+					<img class="bg-img" src="image/b/1.png"/>
+				</li>
+				<li class="layer max-size" data-depth=".05">
+					<p class="h-text" style="position: absolute;top: 30%;text-align: center;width: 100%">Hello Unity</p>
+					<p style="position: absolute;bottom: 50px;text-align: center;width: 100%">滑动鼠标或点击键盘↓</p>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<ul anim-name="fadeIn" id="scene2" style="position: absolute;bottom: 0;margin-bottom:0" class="max-size">
+				<li class="layer max-size" data-depth=".2">
+					<img class="bg-img" src="image/b/3.png"/>
+				</li>
+				<li class="layer max-size" data-depth=".35">
+					<img class="bg-img" src="image/b/1.png"/>
+				</li>
+				<li class="layer max-size" data-depth=".05">
+					<p anim-name="fadeIn" class="text2 delay-1s txt-shadow" style="margin-top: 150px;margin-left: 5%;position: absolute;" >
+						比较完整的保卫萝北
+					</p>
+					<div class="video-container">
+						<video anim-name="fadeIn" class="video2" autoplay="autoplay" loop="loop" muted="muted">
+							<source src="video/P51.mp4" type="video/mp4"></source>
+						</video>
+					</div>
+				</li>
+			</ul>
+			<div anim-name="slideInDown" class="h-text sub-title">第三章</div>
+		</div>
+		<div class="swiper-slide">
+			<ul anim-name="fadeIn" id="scene3" style="position: absolute;bottom: 0;margin-bottom:0" class="max-size">
+				<li class="layer max-size" data-depth=".2">
+					<img class="bg-img" src="image/b/4.png"/>
+				</li>
+				<li class="layer max-size" data-depth=".25">
+					<img class="bg-img" src="image/b/1.png"/>
+				</li>
+				<li class="layer max-size" data-depth=".05">
+					<p anim-name="fadeIn" class="text2 delay-1s txt-shadow" style="margin-top: 150px;margin-left: 25%;position: absolute;" >
+						基于状态模式UI Framework
+					</p>
+					<p anim-name="fadeIn" class="text2 delay-2s txt-shadow" style="margin-top: 230px;margin-left: 25%;position: absolute;" >
+						跑来跑去可没有打人爽~
+					</p>
+					<div class="video-container">
+						<video anim-name="fadeIn" class="video" autoplay="autoplay" loop="loop" muted="muted">
+							<source src="video/P41.mp4" type="video/mp4"></source>
+						</video>
+					</div>
+				</li>
+			</ul>
+			<div anim-name="slideInDown" class="h-text sub-title">第二章</div>
+		</div>
+		<div class="swiper-slide">
+			<ul anim-name="fadeIn" id="scene4" style="position: absolute;bottom: 0;margin-bottom:0" class="max-size">
+				<li class="layer max-size" data-depth=".2">
+					<img class="bg-img" src="image/b/2.png"/>
+				</li>
+				<li class="layer max-size" data-depth=".5">
+					<img class="bg-img" src="image/b/1.png"/>
+				</li>
+				<li class="layer max-size" data-depth=".05">
+					<p anim-name="fadeIn" class="text2 delay-1s txt-shadow ml-5" style="margin-top: 150px;position: absolute;" >
+						咻咻咻~~~
+					</p>
+					<p anim-name="fadeIn" class="text2 delay-2s txt-shadow ml-5" style="margin-top: 230px;position: absolute;" >
+						哒哒哒~~~
+					</p>
+					<p anim-name="fadeIn" class="text2 delay-3s txt-shadow ml-5" style="margin-top: 310px;position: absolute;" >
+						啪啪啪~~~
+					</p>
+
+					<div class="video-container">
+						<video anim-name="fadeIn" class="video" autoplay="autoplay" loop="loop" muted="muted">
+							<source src="video/P22.mp4" type="video/mp4"></source>
+						</video>
+					</div>
+				</li>
+			</ul>
+			<div anim-name="slideInDown" class="h-text sub-title">初章</div>
+		</div>
+		<div class="swiper-slide">
+			<ul anim-name="fadeIn" id="scene5" style="position: absolute;bottom: 0;margin-bottom:0" class="max-size">
+				<li class="layer max-size" data-depth=".2">
+					<img class="bg-img" src="image/b/5.png"/>
+				</li>
+				<li class="layer max-size" data-depth=".35">
+					<img class="bg-img" src="image/b/1.png"/>
+				</li>
+				<li class="layer max-size" data-depth=".05">
+					<p anim-name="fadeIn" class="text2 delay-1s txt-shadow ml-5" style="margin-top: 150px;position: absolute;" >
+						有时候还能回想起
+					</p>
+					<p anim-name="fadeIn" class="text2 delay-2s txt-shadow ml-5" style="margin-top: 230px;position: absolute;" >
+						第一次打开Unity的好奇
+					</p>
+					<p anim-name="fadeIn" class="text2 delay-3s txt-shadow ml-5" style="margin-top: 310px;position: absolute;" >
+						第一次完成UI的心情
+					</p>
+					<p anim-name="fadeIn" class="text2 delay-4s txt-shadow ml-5" style="margin-top: 390px;position: absolute;" >
+						第一次...
+					</p>
+					<div class="video-container">
+						<video anim-name="fadeIn" class="video" autoplay="autoplay" loop="loop" muted="muted">
+							<source src="video/P11.mp4" type="video/mp4"></source>
+						</video>
+					</div>
+				</li>
+			</ul>
+			<div anim-name="slideInDown" class="h-text sub-title">这就是开始？</div>
+		</div>
+		<div class="swiper-slide">
+			<p class="h-text" style="position: absolute;top: 30%;text-align: center;width: 100%">未完待续</p>
+		</div>
+	</div>
+</div>
+
+
+</body>
+<script type="text/javascript" src="js/jquery-v3.3.1.min.js"></script>
+<script type="text/javascript" src="js/onepage-scroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.parallax.js"></script>
+<script type="text/javascript" src="js/parallax.js"></script>
+<script type="text/javascript" src="js/self.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+</html>

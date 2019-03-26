@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<title>
+		HelloUnity
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/self.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+</head>
+<style>
+	html{
+		width: 100%;
+		height: 100%;
+	}
+	body{
+		width: 100%;
+		height: 100%;
+	}
+	.two-line-text {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden; 
+		text-overflow:ellipsis;
+	}
+</style>
+<body>
+	<div class="swiper-container max-size">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">Slide 1
+				<div style="width:100px;height:50px;padding-left: 10px;padding-right: 10px">
+					<p class="two-line-text" 
+					style="width: 100%;background-color: springgreen"> 
+					LUNINGLUCYASHDKJAHSDAHK </p>
+				</div>
+			</div>
+			<div class="swiper-slide">Slide 2</div>
+			<div class="swiper-slide">Slide 3</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript">
+	window.onload = function () {
+		var mySwiper = new Swiper ('.swiper-container', {
+		direction: 'vertical',
+		loop: true
+		})
+	};
+</script>
+
+</html>
