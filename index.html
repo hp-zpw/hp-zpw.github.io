@@ -1,160 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-	<title>
-		Hello Unity
-	</title>
-	<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css"/>
-	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
-	<link rel="stylesheet" type="text/css" href="css/self.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Live2D</title>
 </head>
-<body>
-<div class="loader-bg">
-	<!-- <img id="Mask" class="max-size hide" src=""/> -->
-	<div id="TempMask" class="max-size" style="background-color: black"></div>
-	<img id="PuffSvg" class="loader" src="svg/puff.svg"/>
-	<button id="EnterBtn" class="button button-origin undisplay anim-ease-out" >ENTER</button>
-</div>
 
-<audio id="bgAudio" loop="loop" src="audio/bg1.mp3"></audio>
+<style>
+    html {
+        height: 100%;
+        margin: 0;
+    }
 
-<div class="main">
-	<div class="page page1">
-		<div class="h-text" style="position: absolute;right: 10px;top: 10px;">传送门终端</div>
-		<div anim-name="fadeIn" class="max-size">
-		<ul id="scene1" class="max-size">
-			<li class="layer max-size" data-depth=".2">
-				<img class="bg-img2" src="image/b/jie2.png"/>
-			</li>
-			<!-- <li class="layer max-size" data-depth=".25">
-				<img class="bg-img" src="image/b/1.png"/>
-			</li> -->
-			<li class="layer max-size" data-depth=".1">
-				<p class="only-mobile h-text txt-shadow col-white" style="position: absolute;top: 35%;text-align: center;width: 100%">Hello Unity</p>
-				<p class="only-pc h-text txt-shadow" style="position: absolute;top: 35%;text-align: center;width: 100%">Hello Unity</p>
-				<p class="only-mobile guide-text txt-shadow-small col-white" >向下滑动↓</p>
-				<p class="only-pc guide-text txt-shadow" >滑动鼠标或点击键盘↓</p>
-			</li>
-		</ul>
-		</div>
-		
-	</div>
-	<div class="page page2">
-		<ul anim-name="fadeIn" id="scene2" style="position: absolute;bottom: 0;margin-bottom:0" class="max-size">
-			<li class="layer max-size" data-depth=".4">
-				<img class="bg-img" src="image/b/3.png"/>
-			</li>
-			<li class="layer max-size" data-depth=".7">
-				<img class="bg-img" src="image/b/1.png"/>
-			</li>
-			<li class="layer max-size" data-depth=".1">
-				<p anim-name="fadeIn" class="text2 delay-1s txt-shadow" style="margin-top: 150px;margin-left: 5%;position: absolute;" >
-					比较完整的保卫萝北
-				</p>
-				<div class="video-container">
-					<video anim-name="fadeIn" class="video2" autoplay="autoplay" loop="loop" muted="muted">
-						<source src="video/P51.mp4" type="video/mp4"/>
-					</video>
-				</div>
-			</li>
-		</ul>
-		<div anim-name="slideInDown" class="h-text sub-title">第三章</div>
-	</div>
-	<div class="page page3">
-		<ul anim-name="fadeIn" id="scene3" style="position: absolute;bottom: 0;margin-bottom:0" class="max-size">
-			<li class="layer max-size" data-depth=".4">
-				<img class="bg-img" src="image/b/4.png"/>
-			</li>
-			<li class="layer max-size" data-depth=".5">
-				<img class="bg-img" src="image/b/1.png"/>
-			</li>
-			<li class="layer max-size" data-depth=".1">
-				<p anim-name="fadeIn" class="text2 delay-1s txt-shadow ml-25 sub-line1">
-					基于状态模式UI Framework
-				</p>
-				<p anim-name="fadeIn" class="text2 delay-2s txt-shadow ml-25 sub-line2">
-					跑来跑去可没有打人爽~
-				</p>
-				<div class="video-container">
-					<video anim-name="fadeIn" class="video" autoplay="autoplay" loop="loop" muted="muted">
-						<source src="video/P41.mp4" type="video/mp4"/>
-					</video>
-				</div>
-			</li>
-		</ul>
-		<div anim-name="slideInDown" class="h-text sub-title">第二章</div>
-	</div>
-	<div class="page page4">
-		<ul anim-name="fadeIn" id="scene4" style="position: absolute;bottom: 0;margin-bottom:0" class="max-size">
-			<li class="layer max-size" data-depth=".4">
-				<img class="bg-img" src="image/b/2.png"/>
-			</li>
-			<li class="layer max-size" data-depth="1">
-				<img class="bg-img" src="image/b/1.png"/>
-			</li>
-			<li class="layer max-size" data-depth=".1">
-				<p anim-name="fadeIn" class="text2 delay-1s txt-shadow ml-5 sub-line1">
-					咻咻咻~~~
-				</p>
-				<p anim-name="fadeIn" class="text2 delay-2s txt-shadow ml-5 sub-line2">
-					哒哒哒~~~
-				</p>
-				<p anim-name="fadeIn" class="text2 delay-3s txt-shadow ml-5 sub-line3">
-					啪啪啪~~~
-				</p>
+    body {
+        height: 100%;
+        margin: 0;
+    }
 
-				<div class="video-container">
-					<video anim-name="fadeIn" class="video" autoplay="autoplay" loop="loop" muted="muted">
-						<source src="video/P22.mp4" type="video/mp4"/>
-					</video>
-				</div>
-			</li>
-		</ul>
-		<div anim-name="slideInDown" class="h-text sub-title">初章</div>
-	</div>
-	<div class="page page5">
-		<ul anim-name="fadeIn" id="scene5" style="position: absolute;bottom: 0;margin-bottom:0" class="max-size">
-			<li class="layer max-size" data-depth=".4">
-				<img class="bg-img" src="image/b/5.png"/>
-			</li>
-			<li class="layer max-size" data-depth=".7">
-				<img class="bg-img" src="image/b/1.png"/>
-			</li>
-			<li class="layer max-size" data-depth=".1">
-				<p anim-name="fadeIn" class="text2 delay-1s txt-shadow ml-5 sub-line1">
-					有时候还能回想起
-				</p>
-				<p anim-name="fadeIn" class="text2 delay-2s txt-shadow ml-5 sub-line2">
-					第一次打开Unity的好奇
-				</p>
-				<p anim-name="fadeIn" class="text2 delay-3s txt-shadow ml-5 sub-line3">
-					第一次完成UI的心情
-				</p>
-				<p anim-name="fadeIn" class="text2 delay-4s txt-shadow ml-5 sub-line4">
-					第一次...
-				</p>
-				<div class="video-container">
-					<video anim-name="fadeIn" class="video" autoplay="autoplay" loop="loop" muted="muted">
-						<source src="video/P11.mp4" type="video/mp4"/>
-					</video>
-				</div>
-			</li>
-		</ul>
-		<div anim-name="slideInDown" class="h-text sub-title">这就是开始？</div>
-	</div>
-	<div class="page page6">
-		<p anim-name="fadeIn" class="h-text" style="position: absolute;top: 35%;text-align: center;width: 100%">未完待续...</p>
-	</div>
-</div>
+    .body{
+        animation-duration: 10s;
+        animation-name: colorGridient;
+        animation-iteration-count: infinite; 
+    }
 
+    @keyframes colorGridient{
+        from {
+            background-color:#00d2ff;
+        }
 
+        50% {
+            background-color: #928DAB;
+
+        }
+        
+        to {
+            background-color: #00d2ff;
+        }
+        
+    }
+
+    @-webkit-keyframes colorGridient{
+       from {
+            background-color:#00d2ff;
+        }
+
+        50% {
+            background-color: #928DAB;
+
+        }
+        
+        to {
+            background-color: #00d2ff;
+        }
+        
+        
+    }
+
+</style>
+<script type="text/javascript"
+    src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+
+<body class="body">
 </body>
-<script type="text/javascript" src="js/jquery-v3.3.1.min.js"></script>
-<script type="text/javascript" src="js/onepage-scroll.min.js"></script>
-<script type="text/javascript" src="js/jquery.parallax.js"></script>
-<script type="text/javascript" src="js/parallax.js"></script>
-<script type="text/javascript" src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
-<script type="text/javascript" src="js/self.js"></script>
+<script type="text/javascript">
+    const MODEL_URL = `model/live2d-widget-model-tororo/assets/tororo.model.json`;
+
+    (function InitL2DWidget() {
+        L2Dwidget.init({
+            "model": {
+                jsonPath:MODEL_URL,
+                "scale": 1
+            },
+            "display": {
+                "position": "center",
+                "width": document.body.clientWidth/2,
+                "height": document.body.clientHeight/2,
+                // "hOffset": 0,
+                // "vOffset": 0,
+            },
+            "mobile": {
+                "show": true,
+                "scale": 1
+            },
+            "react": {
+                "opacityDefault": 1,
+                "opacityOnHover": 1
+            }
+        });
+
+    })();
+</script>
+
 </html>
